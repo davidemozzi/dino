@@ -88,6 +88,7 @@ function restartGame() {
   cactuses = [];
   dino.jumping = false;
   dino.y = 0;
+  speed = 5;
   gameover = false;
   menu.hide();
 }
