@@ -86,6 +86,7 @@ function checkCollision() {
 
 function restartGame() {
   cactuses = [];
+  dino.jumping = false;
   gameover = false;
   menu.hide();
 }
