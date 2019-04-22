@@ -51,5 +51,6 @@ class Dino {
     if (c1 && (c2 && c3 || c4 && c5)) {
       return true;
     }
+    return false;
   }
 }
