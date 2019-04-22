@@ -24,8 +24,8 @@ function setup() {
   noSmooth();
   loadSprites();
   baseline = height * 2 / 3;
-  dino = new Dino(50, SPRITES.dino.idle.width, SPRITES.dino.idle.height);
-  ground = new Ground(0, SPRITES.ground.normal.width, SPRITES.ground.normal.height);
+  dino = new Dino(50, 24, 47);
+  ground = new Ground();
   cactuses = [];
   menu = new Menu();
   speed = 5;

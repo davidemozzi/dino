@@ -9,6 +9,8 @@ class Menu {
   }
 
   show() {
+    imageMode(CORNER);
+    rectMode(CORNER);
     let x = width / 2 - this.restartButton.width / 2;
     let y = height / 3 + this.restartButton.height / 2;
     this.restartButton.position(x, y);

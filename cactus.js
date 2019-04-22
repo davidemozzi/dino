@@ -14,6 +14,8 @@ class Cactus {
   }
 
   show() {
+    imageMode(CORNER);
+    rectMode(CORNER);
     image(SPRITES.cactus[this.size][this.index], this.x, baseline - this.h, this.w, this.h);
     if (showBoxes) {
       stroke(255, 0, 0);
