@@ -72,12 +72,7 @@ function draw() {
 
 function checkCollision() {
   for (let cactus of cactuses) {
-    let c1 = dino.y < cactus.h;
-    let c2 = dino.x > cactus.x;
-    let c3 = dino.x < cactus.x + cactus.w;
-    let c4 = dino.x + dino.w > cactus.x;
-    let c5 = dino.x + dino.w < cactus.x + cactus.w;
-    if (c1 && (c2 && c3 || c4 && c5)) {
+    if (dino.collision(cactus)) {
       return true;
     }
   }

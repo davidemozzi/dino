@@ -41,4 +41,15 @@ class Dino {
     this.vy = 10;
     this.jumping = true;
   }
+
+  collision(body) {
+    let c1 = this.y < body.h;
+    let c2 = this.x > body.x;
+    let c3 = this.x < body.x + body.w;
+    let c4 = this.x + this.w > body.x;
+    let c5 = this.x + this.w < body.x + body.w;
+    if (c1 && (c2 && c3 || c4 && c5)) {
+      return true;
+    }
+  }
 }
