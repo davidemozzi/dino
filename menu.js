@@ -14,7 +14,9 @@ class Menu {
     let x = width / 2 - this.restartButton.width / 2;
     let y = height / 3 + this.restartButton.height / 2;
     this.restartButton.position(x, y);
-    this.restartButton.show();
+    if (this.restartButton.elt.style.display == "none") {
+      this.restartButton.show();
+    }
     image(SPRITES.menu.button, x, y);
     x = width / 2 - SPRITES.menu.gameover.width / 2;
     y = height / 3 - SPRITES.menu.gameover.height;
